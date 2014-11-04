@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="3.0" method="upgrade">
+	<name>ooba:creative Module Template</name>
+	<author>ooba:creative</author>
+	<copyright>Copyright (C) 2013 ooba:creative. All rights reserved.</copyright>
+	<authorEmail>studio@oobacreative.co.uk</authorEmail>
+	<authorUrl>http://www.oobacreative.co.uk</authorUrl>
+	<license>
+		GNU General Public License v2.0 for PHP files.
+	</license>
+	<version>1.0</version>
+	<creationDate>January 2014</creationDate>
+	<description>
+		<![CDATA[<p><strong>ooba:news templaple for the RAXO news module.</strong></p>]]>
+	</description>
+	<fileset>
+		<files target="templates/oobatemplate/html/mod_raxo_allmode/">
+			<filename>ooba-news.php</filename>
+			<filename>ooba-news.xml</filename>
+			<folder>ooba-news</folder>
+		</files>
+	</fileset>
+</extension>

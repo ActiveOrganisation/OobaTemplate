@@ -1,0 +1,48 @@
+/********************************************************************************************************/
+/*    Note: Design for a width of 480px -> 599px                      */
+/********************************************************************************************************/
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+
+/**** Some main styles ****/
+.mainPageWrapper{ width: 95%; }  
+
+  
+#header .moduleLeft, #header .moduleRight { clear: both; }  
+  
+/****** Page Images Right / Left ********/
+.pageImageRight, .pageImageLeft { width: 250px; }
+.imageCaption { width: 250px; font-size: 85%; }
+  
+/********************************************************************************************************/
+/*    Main Navigation / Off Canvas Navigation                   */
+/********************************************************************************************************/
+#navigation {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    
+-webkit-transition: opacity 1s linear 0.2s;
+-moz-transition: opacity 1s linear 0.2s;
+transition: opacity 1s linear 0.2s; 
+  }
+#offCanvasNavButtonWrapper { display:block !important; }
+
+
+
+
+/********************************************************************************************************/
+/*    Footer / Footer Nav                      */
+/********************************************************************************************************/
+
+
+/********************************************************************************************************/
+/*    Module Overrides                     */
+/********************************************************************************************************/
+
+
+
+} /*** Note: Design for a width of 480px -> 599px ***/
+

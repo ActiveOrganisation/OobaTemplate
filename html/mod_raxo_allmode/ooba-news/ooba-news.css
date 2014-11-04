@@ -1,0 +1,206 @@
+/**
+ * =============================================================
+ * RAXO All-mode PRO J3.x - Template CSS
+ * -------------------------------------------------------------
+ * @package		RAXO All-mode PRO
+ * @subpackage	All-mode Columns Template
+ * @copyright	Copyright (C) 2009-2014 RAXO Group
+ * @license		RAXO Commercial License
+ * 				This file is forbidden for redistribution
+ * @link		http://www.raxo.org
+ * =============================================================
+ */
+
+
+/* ----- RESET Styles ----- */
+.ooba-news a { text-decoration: none; }
+.ooba-news a:hover { color: #333333 !important; background: transparent none; }
+.ooba-news .allmode-clear { clear: both; }
+
+/* ----- MODULE BOX Styles ----- */
+.ooba-news { width: 95%; padding-bottom: 30px; margin: auto; clear: both; }
+.ooba-news .allmode-name { padding: 0 8px 4px; font-size: 14px; font-weight: bold; line-height: 20px; text-transform: uppercase; }
+.ooba-news .allmode-showall { padding: 0 8px; text-align: right !important; }
+
+/* ----- COMMON Fields Styles ----- */
+.ooba-news .allmode-info > span, .ooba-news .allmode-comments { padding: 0 10px 0 17px; font-size: 11px; background-image: url("icons.png"); background-repeat: no-repeat; }
+
+/* Item RATING / Inactive STAR / Item COMMENTS / Item READ MORE */
+.ooba-news span.allmode-rating { padding: 0; background-image: none; white-space: nowrap; }
+.ooba-news .allmode-rating span { display: inline-block; background: url("rating.png") no-repeat 0 0; }
+.ooba-news .allmode-star { margin: 0 1px; width: 10px; height: 10px; }
+.ooba-news .allmode-star span {	width: 100%; height: 100%; }
+.ooba-news .allmode-comments { padding-right: 0; color: #505050; }
+.ooba-news .allmode-comments a { font-weight: normal; }
+.ooba-news .allmode-readmore { float: right; margin-right: 8px; font-size: 11px; line-height: 15px; text-align: right; }
+
+
+
+
+
+/******************************************************/
+/******************* TOP ITEMS Styles *****************/
+/******************************************************/
+.ooba-news .allmode-topbox { margin-left: 0px; overflow: hidden; }
+.ooba-news .allmode-topitem { float: left; margin: 0; padding-bottom: 6px; width: 100%;	border: 1px solid #ccc; }
+
+/* TOP Item TITLE block */
+.allmode-topitem .allmode-title {
+width: 100%;
+border-bottom: 1px solid #ccc;
+position: relative;
+
+background: #e9e7fd;
+background: -moz-linear-gradient(top, #fefefe 0%, #e2e1e6 61%, #e2e1e6 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #fefefe), color-stop(61%, #e2e1e6), color-stop(100%, #e2e1e6));
+background: -webkit-linear-gradient(top, #fefefe 0%, #e2e1e6 61%, #e2e1e6 100%);
+background: -o-linear-gradient(top, #fefefe 0%, #e2e1e6 61%, #e2e1e6 100%);
+background: -ms-linear-gradient(top, #fefefe 0%, #e2e1e6 61%, #e2e1e6 100%);
+background: linear-gradient(to bottom, #fefefe 0%, #e2e1e6 61%, #e2e1e6 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e1e6', GradientType=0 );
+  
+-webkit-box-shadow: 0px 10px 18px -7px rgba(187,187,187,1);
+-moz-box-shadow: 0px 10px 18px -7px rgba(187,187,187,1);
+box-shadow: 0px 10px 18px -7px rgba(187,187,187,1);
+}
+.allmode-topitem .allmode-title h3 { margin-top: 0px; margin-bottom: 5px; font-size: 130%; }
+.allmode-topitem .allmode-title a { display: block; text-decoration: none !important; padding: 12px; color: #666; }
+
+.ooba-news .allmode-topitem .allmode-date {	position: absolute; bottom: 2px; right: 6px; color: #555; font-size: 9px; font-weight: 300; }
+
+/* Top item - content area block */
+.newsItemContentWrapper { padding: 20px 10px; }
+.allmode-topitem .allmode-text { margin: 0px; padding-left: 4px; overflow: hidden; font-size: 12px; color: #555; }
+.allmode-topbox .allmode-img { float: right; border: 1px solid #ccc; margin-left: 25px; }
+
+.ooba-news .allmode-topitem .allmode-info {	margin-top: -2px; padding: 8px 8px 4px; line-height: 16px; background-color: #f3f3f3; }
+
+
+
+
+/******************************************************/
+/******************* REST of ARTICLES Styles *****************/
+/******************************************************/
+.allmode-itemsbox { margin-left: -35px; overflow: hidden; }
+.allmode-item { float: left; margin: 12px 0px 0 36px; padding-bottom: 4px; width: 45%; overflow: hidden; }
+.allmode-item .allmode-title { width: 64%; margin: 0px 0 4px 0; padding: 0px; font-size: 13px; font-weight: bold; float: right; }
+.allmode-item .allmode-img { display: block; float: left; margin: 2px 16px 8px 0; border: 1px solid #555; }
+
+
+
+
+
+.ooba-news .allmode-item .allmode-text { font-size: 12px; line-height: 16px; color: #505050; }
+.ooba-news .allmode-item .allmode-info { margin-bottom: 8px; padding: 4px 8px; line-height: 16px; background-color: #f3f3f3; border-radius: 2px; }
+
+
+
+
+
+
+/* ----- COLOR Schemes ----- */
+/* --- Default Color --- */
+.ooba-news .allmode-info > span {color: #052646;}
+
+.ooba-news .allmode-category {background-position: 0 0;}
+.ooba-news .allmode-hits {background-position: 0 -40px;}
+.ooba-news .allmode-date {background-position: 0 -80px;}
+.ooba-news .allmode-author {background-position: 0 -120px;}
+.ooba-news .allmode-comments {background-position: 2px -160px;}
+.ooba-news .allmode-star span {background-position: 0 -40px;}
+
+/* --- Red Color --- */
+.columns-red a, .columns-red .allmode-name, .columns-red .allmode-title, .columns-red .allmode-showall {color: #cc1f1f !important;}
+.columns-red .allmode-topitem .allmode-date, .columns-red .allmode-info > span {color: #3d0909;}
+.columns-red, .columns-red .allmode-name, .columns-red .allmode-topitem, .columns-red .allmode-img img {border-color: #efc4c2;}
+.columns-red .allmode-img a:hover img {border-color: #cc1f1f;}
+.columns-red .allmode-category {background-position: 0 -200px;}
+.columns-red .allmode-hits {background-position: 0 -240px;}
+.columns-red .allmode-date {background-position: 0 -280px;}
+.columns-red .allmode-author {background-position: 0 -320px;}
+.columns-red .allmode-comments {background-position: 0 -360px;}
+.columns-red .allmode-star span {background-position: 0 -80px;}
+
+/* --- Orange Color --- */
+.columns-orange a, .columns-orange .allmode-name, .columns-orange .allmode-title, .columns-orange .allmode-showall {color: #d94d16 !important;}
+.columns-orange .allmode-topitem .allmode-date, .columns-orange .allmode-info > span {color: #411707;} 
+.columns-orange,.columns-orange .allmode-name, .columns-orange .allmode-topitem, .columns-orange .allmode-img img {border-color: #f2cfc0;}
+.columns-orange .allmode-img a:hover img {border-color: #d94d16;}
+.columns-orange .allmode-category {background-position: 0 -400px;}
+.columns-orange .allmode-hits {background-position: 0 -440px;}
+.columns-orange .allmode-date {background-position: 0 -480px;}
+.columns-orange .allmode-author {background-position: 0 -520px;}
+.columns-orange .allmode-comments {background-position: 0 -560px;}
+.columns-orange .allmode-star span {background-position: 0 -120px;}
+
+/* --- Yellow Color --- */
+.columns-yellow a, .columns-yellow .allmode-name, .columns-yellow .allmode-title, .columns-yellow .allmode-showall {color: #ebc300 !important;}
+.columns-yellow .allmode-topitem .allmode-date, .columns-yellow .allmode-info > span {color: #463a00;}
+.columns-yellow, .columns-yellow .allmode-name, .columns-yellow .allmode-topitem, .columns-yellow .allmode-img img {border-color: #f7edbb;}
+.columns-yellow .allmode-img a:hover img {border-color: #ebc300;}
+.columns-yellow .allmode-category {background-position: 0 -600px;}
+.columns-yellow .allmode-hits {background-position: 0 -640px;}
+.columns-yellow .allmode-date {background-position: 0 -680px;}
+.columns-yellow .allmode-author {background-position: 0 -720px;}
+.columns-yellow .allmode-comments {background-position: 0 -760px;}
+.columns-yellow .allmode-star span {background-position: 0 -160px;}
+
+/* --- Green Color --- */
+.columns-green a, .columns-green .allmode-name, .columns-green .allmode-title, .columns-green .allmode-showall {color: #4d9926 !important;}
+.columns-green .allmode-topitem .allmode-date, .columns-green .allmode-info > span {color: #172e0b;}
+.columns-green, .columns-green .allmode-name, .columns-green .allmode-topitem, .columns-green .allmode-img img {border-color: #cfe2c4;}
+.columns-green .allmode-img a:hover img {border-color: #4d9926;}
+.columns-green .allmode-category {background-position: 0 -800px;}
+.columns-green .allmode-hits {background-position: 0 -840px;}
+.columns-green .allmode-date {background-position: 0 -880px;}
+.columns-green .allmode-author {background-position: 0 -920px;}
+.columns-green .allmode-comments {background-position: 0 -960px;}
+.columns-green .allmode-star span {background-position: 0 -200px;}
+
+/* --- Turquoise Color --- */
+.columns-turquoise a, .columns-turquoise .allmode-name, .columns-turquoise .allmode-title, .columns-turquoise .allmode-showall {color: #1bb39e !important;}
+.columns-turquoise .allmode-topitem .allmode-date, .columns-turquoise .allmode-info > span {color: #08352f;}
+.columns-turquoise, .columns-turquoise .allmode-name, .columns-turquoise .allmode-topitem, .columns-turquoise .allmode-img img {border-color: #c3e9e2;}
+.columns-turquoise .allmode-img a:hover img {border-color: #1bb39e;}
+.columns-turquoise .allmode-category {background-position: 0 -1000px;}
+.columns-turquoise .allmode-hits {background-position: 0 -1040px;}
+.columns-turquoise .allmode-date {background-position: 0 -1080px;}
+.columns-turquoise .allmode-author {background-position: 0 -1120px;}
+.columns-turquoise .allmode-comments {background-position: 0 -1160px;}
+.columns-turquoise .allmode-star span {background-position: 0 -240px;}
+
+/* --- Blue Color --- */
+.columns-blue a, .columns-blue .allmode-name, .columns-blue .allmode-title, .columns-blue .allmode-showall {color: #0a55bf !important;}
+.columns-blue .allmode-topitem .allmode-date, .columns-blue .allmode-info > span {color: #031939;}
+.columns-blue, .columns-blue .allmode-name, .columns-blue .allmode-topitem, .columns-blue .allmode-img img {border-color: #bfd1ea;}
+.columns-blue .allmode-img a:hover img {border-color: #0a55bf;}
+.columns-blue .allmode-category {background-position: 0 -1200px;}
+.columns-blue .allmode-hits {background-position: 0 -1240px;}
+.columns-blue .allmode-date {background-position: 0 -1280px;}
+.columns-blue .allmode-author {background-position: 0 -1320px;}
+.columns-blue .allmode-comments {background-position: 0 -1360px;}
+.columns-blue .allmode-star span {background-position: 0 -280px;}
+
+/* --- Violet Color --- */
+.columns-violet a, .columns-violet .allmode-name, .columns-violet .allmode-title, .columns-violet .allmode-showall {color: #6c3aad !important;}
+.columns-violet .allmode-topitem .allmode-date, .columns-violet .allmode-info > span {color: #201134;}
+.columns-violet, .columns-violet .allmode-name, .columns-violet .allmode-topitem, .columns-violet .allmode-img img {border-color: #d7cbe6;}
+.columns-violet .allmode-img a:hover img {border-color: #6c3aad;}
+.columns-violet .allmode-category {background-position: 0 -1400px;}
+.columns-violet .allmode-hits {background-position: 0 -1440px;}
+.columns-violet .allmode-date {background-position: 0 -1480px;}
+.columns-violet .allmode-author {background-position: 0 -1520px;}
+.columns-violet .allmode-comments {background-position: 0 -1560px;}
+.columns-violet .allmode-star span {background-position: 0 -320px;}
+
+/* --- Black Color --- */
+.columns-black a, .columns-black .allmode-name, .columns-black .allmode-title, .columns-black .allmode-showall {color: #1a1a1a !important;}
+.columns-black .allmode-topitem .allmode-date, .columns-black .allmode-info > span {color: #080808;}
+.columns-black, .columns-black .allmode-name, .columns-black .allmode-topitem, .columns-black .allmode-img img {border-color: #c3c3c1;}
+.columns-black .allmode-img a:hover img {border-color: #1a1a1a;}
+.columns-black .allmode-category {background-position: 0 -1600px;}
+.columns-black .allmode-hits {background-position: 0 -1640px;}
+.columns-black .allmode-date {background-position: 0 -1680px;}
+.columns-black .allmode-author {background-position: 0 -1720px;}
+.columns-black .allmode-comments {background-position: 0 -1760px;}
+.columns-black .allmode-star span {background-position: 0 -360px;}

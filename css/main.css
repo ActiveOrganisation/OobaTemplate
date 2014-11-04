@@ -1,0 +1,826 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/* Some styles taken from HTML 5 Boukerplate */
+
+/* ==========================================================================
+   Standard Styles
+   ========================================================================== */
+
+html, button, input, select, textarea { color: #222; }
+html { font-size: 1em; line-height: 1.4; }
+
+/* These selection rule sets have to be separate */
+::-moz-selection { background: #b3d4fc; text-shadow: none; }
+::selection { background: #b3d4fc; text-shadow: none; }
+
+/* A better looking default horizontal rule */
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+/* Remove the gap between images, videos, audio and canvas and the bottom of their containers */
+audio, canvas, img, video { vertical-align: middle; }
+
+/* Remove default fieldset styles */
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Allow only vertical resizing of textareas */
+textarea { resize: vertical; }
+
+
+/* The `Mirco Clearfix` */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+/* For IE 6/7 only - Include this rule to trigger hasLayout and contain floats */
+.clearfix { *zoom: 1; }
+
+/* our fallback incase the below gets used */
+.clear { clear: both; border: none; float: none; }
+
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+ 
+
+/* ==========================================================================
+   Main Styles
+   ========================================================================== */
+body
+{
+	min-width: 100px !important;
+	font-size: 12pt;
+	line-height: 1.7em !important;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #6E6E6E;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	color: #e2057c;
+	margin: 10px 0px;
+	font-weight: normal;
+	line-height: 1;
+	text-rendering: optimizelegibility;
+	margin-bottom: 30px;
+}
+
+h1 { font-size: 210%; color: #e2057c; }
+h2 { font-size: 150%; color: #e2057c; margin-bottom: 6px; }
+h3 { font-size: 150%; color: #888; margin-top: 0.5em; }
+h4 { font-size: 120%; }
+h5 { font-size: 100%; }
+h6 { font-size: 100%; }
+
+p { margin-top: 0.2em;	font-size: 14px; }
+
+a img { border: none; }
+a, a:hover, a:visited { color: #333; text-decoration:none; font-weight: bold;}
+a:hover { color: #3366cc; }
+
+/*** TABLE ITEMS ****/
+table { width: 94%; margin: 20px 0px; border-collapse: collapse; }
+table, tr, tbody { border: none; border-color: #fff; }
+td { border: 1px solid #ccc; padding: 0.2em 0.4em !important; }
+th { border: 1px solid #ccc; background-color: #ccc; padding: 0.6em; font-size: 120%; color: #666; }
+th a, th a:hover, th a:visited { color: #666; text-decoration: none; }
+th a:hover { text-decoration: underline; }
+.sectiontableentry1 { background-color: #f5f5f5; }
+.sectiontableentry2 { background-color: #f5fefe; }
+
+/***** Back Button - the button that can be added into articles and content *******/
+.backbutton { margin-top: 30px; }
+.backbutton a
+{
+	background-color: #258cad;
+	width: 140px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #fff;
+	text-decoration: none;
+	padding: 3px 4px;
+	text-align: center;
+	display: block;
+	border: 1px solid #258cad;
+}
+.backbutton a:hover { color: #258cad; text-decoration: none; background-color: #fff; }
+
+.w100 { width: 100%; float: none !important; }
+.w75 { width: 70%; padding: 0px; }
+.w50 { width: 45%; }
+
+.moduleRight { float: right; margin-right: 0; }
+.moduleLeft { float: left; margin-left: 0; }
+
+/********************************************************************************************************/
+/*    Some specific styles we have created - these should be available from the JCE class dropdown      */
+/********************************************************************************************************/
+.pageImageRight{ float: right; clear: both; margin-left: 20px; margin-bottom: 20px; border: 1px solid #777; width: 320px;margin-top: 7px; }
+.imageCaptionRight { clear: both; float: right; margin-top: -6px; width: 320px; text-align: center; font-style: italic; }
+.pageImageLeft { float: left; clear: both; margin-right: 20px; margin-bottom: 20px; border: 1px solid #777; width: 320px;margin-top: 7px; }
+.imageCaptionLeft { clear: both; float: left; margin-top: -6px; width: 320px; text-align: center; font-style: italic; }
+.noImageBorder { border: none; }
+
+.left { float: left; margin-left: 0; margin-right: 25px; margin-bottom: 25px; }
+.right { float: right; margin-right: 0; margin-left: 25px; margin-bottom: 25px; }
+
+/************************************/
+
+
+/********************************************************************************************************/
+/*    Core Styles                         */
+/********************************************************************************************************/
+#header { padding: 20px; }
+#header .left, #header .right { width:45%; }
+
+.item-page { min-height: 350px; padding: 20px; }
+
+
+
+/********************************************************************************************************/
+/*    Off Canvas Navigation - Button and Navigation itself                         */
+/********************************************************************************************************/
+
+#offCanvasNavButtonWrapper
+{
+  display: none;
+  float:left;
+  margin: 0px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 10pt;
+  padding: 0px 0px 10px 0px;
+  background: #fff;
+  width: 100%
+}
+
+#offCanvasNavButton {
+  width: auto;
+  padding:5px;
+  padding: 8px 8px 2px 8px;
+  height: 32px;
+  margin-left: 20px;
+  color: #fff;
+  float: left;
+
+  background: #8a31a0;
+  background: -moz-linear-gradient(top, #8a31a0 0%, #8a31a0 35%, #711a89 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #8a31a0), color-stop(35%, #8a31a0), color-stop(100%, #711a89));
+  background: -webkit-linear-gradient(top, #8a31a0 0%, #8a31a0 35%, #711a89 100%);
+  background: -o-linear-gradient(top, #8a31a0 0%, #8a31a0 35%, #711a89 100%);
+  background: -ms-linear-gradient(top, #8a31a0 0%, #8a31a0 35%, #711a89 100%);
+  background: linear-gradient(to bottom, #8a31a0 0%, #8a31a0 35%, #711a89 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a31a0', endColorstr='#711a89', GradientType=0 );
+  
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#offCanvasNavButtonWrapper img { background: none; border: none; }
+#offCanvasNavButtonWrapper.closeReposition { margin-left: -240px; background: none; }
+
+
+
+
+
+
+
+
+
+/****** The actual navigation when it is 'off canvas' ********/
+#navigation.offCanvas { left: -240px; top: 147px; opacity: 1; }
+#navigation.offCanvas .navigation { width: 180px; background: none; }
+#navigation.offCanvas .navigation h3 { margin-bottom: 20px; color: #fff; padding-bottom: 0px; font-size:130%; }
+#navigation.offCanvas .navigation li { text-align: left; width: 100%; margin-left: 0px;}
+
+#navigation.offCanvas .navigation li.active.deeper:before, #navigation.offCanvas  .navigation li.active.deeper:after,
+#navigation.offCanvas  .navigation li.current:before, #navigation.offCanvas  .navigation li.current:after,
+#navigation.offCanvas  .navigation li:hover:before, #navigation.offCanvas  .navigation li:hover:after { content: none; }
+
+#navigation.offCanvas .navigation li.parent { position: relative; }
+#navigation.offCanvas .navigation li .expandTier {
+position: absolute;
+top: 6px;
+right: 10px;
+display: block;
+padding: 4px 10px;
+color: #fff;
+
+background: #00a0c8;
+background: -moz-linear-gradient(top, #00a0c8 0%, #0cb8e3 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #00a0c8), color-stop(100%, #0cb8e3));
+background: -webkit-linear-gradient(top, #00a0c8 0%, #0cb8e3 100%);
+background: -o-linear-gradient(top, #00a0c8 0%, #0cb8e3 100%);
+background: -ms-linear-gradient(top, #00a0c8 0%, #0cb8e3 100%);
+background: linear-gradient(to bottom, #00a0c8 0%, #0cb8e3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a0c8', endColorstr='#0cb8e3', GradientType=0 );
+
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+
+/* Tier 1 EXPAND icons */
+#navigation.offCanvas li .expand-icon-closed:before { content: "\f078"; }
+#navigation.offCanvas li .open .expand-icon-open:before { content: "\f077"; }
+
+/* Tier 2 EXPAND icons */
+#navigation.offCanvas li li .expand-icon-closed:before { content: "\f067"; }
+#navigation.offCanvas li li .open .expand-icon-open:before { content: "\f068"; }
+
+/* Tier 3 EXPAND icons */
+#navigation.offCanvas li li li .expand-icon-closed:before { content: "\f078"; }
+#navigation.offCanvas li li li .open .expand-icon-open:before { content: "\f077"; }
+
+
+
+
+
+
+#navigation.offCanvas .navigation li a { font-weight: 300; margin-left:0px; margin-bottom: 0px; background: none; color: #666; border-bottom: 1px solid #eee; height: auto !important; padding: 10px; font-size: 100%; width: 100% !important; line-height: 14px; }
+#navigation.offCanvas .navigation li.active > a,#navigation.offCanvas .navigation li.current > a { margin-left: 0px; color: #6d018a !important; font-weight: 700; }
+#navigation.offCanvas .navigation li a:hover { color: #6d018a; margin-left: 0px; }
+#navigation.offCanvas .navigation li li { margin-left: 0px !important; background: none; }
+/***** Tier 2 - Needs to be visible as this navigation is mainly for MOBILES - :hover does not work! ********/
+#navigation.offCanvas .navigation ul ul {
+position: relative;
+top:0px;
+border: none;
+max-height: 0em;
+opacity: 0;
+visibility: hidden;
+overflow: hidden;
+width: 100%;
+margin-left: 0px;
+
+-webkit-transition: all .4s ease-out;
+-moz-transition: all .4s ease-out;
+transition: all .4s ease-out;
+}
+#navigation.offCanvas .navigation ul ul a { background: none !important; padding-left: 15px; border:none; padding-right: 40px; font-size: 11px;  border-bottom: 1px solid #eee; }
+#navigation.offCanvas .navigation ul ul.show { max-height: 100em; opacity: 1; visibility: visible; margin-bottom: 20px; padding-top: 5px; background-color: #ddd; }
+
+
+#navigation.offCanvas .navigation ul ul ul { display: block; left: 0px; }
+#navigation.offCanvas .navigation ul ul ul.show { background-color: #eee; }
+#navigation.offCanvas .navigation ul ul ul a { border-bottom: 1px solid #ddd; }
+
+#navigation.offCanvas .navigation ul ul ul ul.show { background-color: #fff; }
+#navigation.offCanvas .navigation ul ul ul ul a { border-bottom: 1px solid #ccc; }
+
+
+#navigation.offCanvas .navigation li:last-child ul { left:0px; }
+
+
+#outerWrapper.offCanvas { left:240px; overflow: visible; }
+/********************** END OF - Off Canvas Navigation - Button ******************/
+
+
+/********************************************************************************************************/
+/*    Slide ins - Content that slides in from the edge of the screen                         */
+/********************************************************************************************************/
+.slidein {
+position: fixed;
+top: 0%;
+background-color: #eb8f23;
+z-index: 10;
+height: 100%;
+  width: 25%;
+
+-webkit-transition: all .4s ease-out;
+-moz-transition: all .4s ease-out;
+transition: all .4s ease-out;
+}
+
+.slidein.left { left: -24.5%; border-right: 4px solid #f0a652; }
+.slidein.right { right: -24.5%; border-left: 4px solid #f0a652; }
+
+.slidein.left .moduletable, .slidein.right .moduletable { width: 90%; margin: auto; margin-top: 30%; }
+.slidein.right .moduletable { float: right; }
+
+
+.slidein.right .moduletable h3, .slidein.left .moduletable h3 {
+position: absolute;
+top: 45%;
+display: block;
+background-color: #eb8f23;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 70%;
+  text-align: center;
+width: 100px;
+  border: 4px solid #f0a652;
+  font-weight: 300;
+  
+transform: rotate(270deg);
+-ms-transform: rotate(270deg);
+-webkit-transform: rotate(270deg);
+}
+
+.slidein.left .moduletable h3 {
+  right: -70px;
+  border-top: none;
+
+-webkit-border-bottom-right-radius: 6px;
+-webkit-border-bottom-left-radius: 6px;  
+-moz-border-radius-bottomright: 6px;
+-moz-border-radius-bottomleft: 6px;
+border-bottom-right-radius: 6px;
+border-bottom-left-radius: 6px;
+}
+.slidein.right .moduletable h3 {
+  left: -70px;
+  border-bottom: none;
+  
+-webkit-border-top-left-radius: 6px;
+-webkit-border-top-right-radius: 6px;
+-moz-border-radius-topleft: 6px;
+-moz-border-radius-topright: 6px;
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+}
+
+
+.slidein.left.offCanvas { left: 0px; }
+.slidein.right.offCanvas { right: 0px; } 
+
+
+
+/* Bottom */
+.slidein.bottom { bottom: -19.5%; }
+
+.slidein.bottom .moduletable h3 {
+ position: absolute;
+top: -16%;
+display: block;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 10px;
+  font-size: 90% !important;
+  text-align: center;
+  width: 260px;
+  font-weight: 300;
+  background-color: #ec008c;
+  
+transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+  
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;  
+}
+
+.slidein.bottom.offCanvas { bottom: -1.5%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************** END OF - Slide ins ******************/
+
+
+
+
+
+
+
+/********************** Wrappers **********************/
+#outerWrapper { overflow:hidden; position:relative;	margin: auto; }
+
+.mainPageWrapper
+{
+	width: 1200px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	min-height: 500px;
+	border: 3px solid #FF9C40;
+	background-color: #fff;
+	padding: 20px;
+	position: relative;
+	padding-bottom: 33px;
+}
+
+.mainContentWrapper { float: left; }
+
+/********************** Breadcrumbs **********************/
+#breadcrumbsTop { padding: 5px 10px; color: #666; border-bottom: 1px solid #ccc; }
+.breadcrumbs { font-size: 90%; }
+.breadcrumbs a { font-size: 95%; font-weight: normal; color: #258cad; }
+/********************** End of Breadcrumbs ******************/
+
+
+
+/***************** Main Navigation ***********************/
+
+.navigation
+{
+	position:relative;
+	margin: 0px !important;
+	padding: 0px;
+	font-weight: normal !important;
+	font-style: normal !important;
+	background-color: #ccc;
+}
+
+/* remove all the bullets, borders and padding from the default list styling */
+.navigation ul {
+	margin: 0em;
+	padding: 0em;
+	width: 100%;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+/* float the list to make it horizontal and a relative positon so that you can control the dropdown menu positon */
+.navigation li {
+	float: left;
+	position: relative;
+	display: inline;
+	text-align: center;
+	list-style-type: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+.navigation li .expandTier { display:none; }
+/* style the links for the top level */
+.navigation a, .navigation a:visited {
+	text-decoration: none;
+	color: #fff;
+	font-size: 92%;
+	display: block;
+	font-weight: bold;
+	padding: 0px 2.0em 0px 2.0em;
+	height: 40px;
+	line-height: 40px;
+}
+
+/********************************************************************************************************/
+/*    2ND LEVEL        */
+/********************************************************************************************************/
+
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+.navigation ul ul
+{
+	visibility: hidden;
+	position: absolute;
+	top: 32px;
+	left: 1px;
+	width: 215px;
+	z-index: 6;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	font-size: 10px;
+	border: 1px solid #ddd;
+	border-top: none;
+	border-bottom:none;
+	background-color: #2d82b4;
+}
+
+.navigation li:last-child ul { left: -119px; }
+.navigation ul ul li { margin: 0px; padding: 0px; }
+
+/* position the third level flyout menu for a left flyout */
+.navigation ul ul.left { left:-77px; z-index: 10; }
+
+/* style the second level background a tags*/
+.navigation ul ul a, .navigation ul ul a:hover, .navigation ul ul a:visited, .navigation ul ul a.drop, .navigation ul ul a.drop:visited, .navigation ul ul li.current a
+{
+	height: auto;
+	color: #fff;
+	line-height: 17px;
+	padding: 5px 10px 5px 10px;
+	width: 195px;
+	text-align: left;
+	display: block;
+	margin: 0px;
+	z-index: 6;
+	border-bottom: 1px solid #ddd;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-size: 110%;
+	background: none !important;
+}
+
+/********************************************************************************************************/
+/*    THIRD LEVEL                          */
+/********************************************************************************************************/
+
+/* position the third level flyout menu */
+.navigation ul ul ul
+{
+	left: 181px;
+	background-color: #66b7b7;
+	top: 0px;
+	width: 140px;
+	z-index: 10;
+	border: none;
+}
+
+/* position the third level flyout menu for a left flyout */
+.navigation ul ul ul.left { left: -13em; z-index: 10; }
+
+/* style the third level */
+.navigation ul ul ul a, .navigation ul ul ul a:visited
+{
+	height: 24px;
+	display:block;
+	line-height: 24px;
+	text-decoration:none;
+	background-color: #66b7b7;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	text-align: left;
+	z-index: 10;
+	width: 120px;  
+	font-weight: normal !important;
+	font-style: normal !important;
+}
+
+/* Tier One - Style for when the navigation button when the user is on that page */
+.navigation a.Over, .navigation a.dropOver { color: #fff; background-color: #ffde00; color: #CF5107; }
+
+/* Tier Two - Style for when the navigation button when the user is on that page */
+.navigation ul ul a.Over, .navigation ul ul a.dropOver { color: #fff; }
+
+/* style the top level hover */
+/* .menu :hover > a :::: styles tier one when hovering tier 2 */
+.navigation a:hover, .navigation li.current a, .navigation li.active.deeper > a, .menu :hover > a { color: #CF5107; background: #ffde00; text-decoration: none; }
+.navigation ul ul :hover > a { text-decoration: none; z-index: 6; }
+
+/* style the second level hover */
+.navigation ul ul a.drop:hover { text-decoration: none; z-index: 6; background-image: none; color: #fff; }
+.navigation ul ul a:hover { text-decoration: none; color: #e2057c; background-color: #fff !important; z-index: 6; background-image: none; }
+.navigation ul ul :hover > a.drop { text-decoration: none; color: #960d0d; background-color: #fff; z-index: 6; background-image: none; }
+
+/* style the third level hover */
+.navigation ul ul ul a:hover { text-decoration: none; color: #fff; background: #8ECFCF; background-image: none; }
+
+/***************************************************************************/
+/*    DON'T EDIT THESE ONES BELOW       */
+/***************************************************************************/
+/* make the second level visible when hover on first level list OR link */
+.navigation ul li:hover ul, .navigation ul a:hover ul { visibility:visible; }
+/* keep the third level hidden when you hover on first level list OR link */
+.navigation ul :hover ul ul { visibility:hidden; }
+/* make the third level visible when you hover over second level list OR link */
+.navigation ul :hover ul :hover ul { visibility:visible; }
+/* style the table so that it takes no part in the layout - required for IE to work */
+.navigationtable { position:absolute; top:0; left:0; }  
+/***************************************************************************/
+/*    End of navigation       */
+/***************************************************************************/
+
+
+
+
+
+/***************************************************************************/
+/*    FOOTER       */
+/***************************************************************************/
+#footer { padding-top: 20px; text-align: center; padding-left: 20px; padding-right: 20px; width: 97%; clear: both; }
+
+/********************************************** Footer in the nav Footer */
+#footerNav { width: 960px; font-size: 100%; position: relative; }
+#footerNav ul { list-style: none; list-style-type: none; margin: 0px; padding: 0px; }
+#footerNav li { float: left; margin-left: 20px; }
+#footerNav li a { font-size: 90%; font-weight: normal; }
+
+/************* Usually pages like Sitemap or Ts and Cs can be found in here **************/
+#extraFooterInfo { width: 960px; margin: auto; font-size: 80%; position: relative; }
+#extraFooterInfo ul { list-style: none; list-style-type: none; margin: 0px; padding: 0px; }
+#extraFooterInfo li { float: left; margin-left: 20px; }
+#extraFooterInfo li a { font-size: 90%; font-weight: normal; }
+
+
+
+/***************************************************************************/
+/*    PAGE - BESPOKE PAGE AMENDS IN HERE       */
+/***************************************************************************/
+
+
+
+
+
+/***************************************************************************/
+/*    MODULE - Section Nav module (Left Hand Side)       */
+/***************************************************************************/
+.tier2SectionNav { margin-bottom: 65px; }
+.tier2SectionNav ul { margin: 0px; padding: 0px; list-style: none; list-style-type: none; margin-left: 5px; }
+.tier2SectionNav li { margin-bottom: 10px; padding: 5px 0px 5px 15px; margin-top: 10px; }
+.tier2SectionNav li a { display: block; color: #808285; text-decoration: none; font-size: 11pt; }
+.tier2SectionNav li a:hover { color: #e2057c; }
+
+
+/***************************************************************************/
+/*    MODULE - Search Function Top .... And Results page       */
+/***************************************************************************/
+
+#header .search label { display: none; }
+#header .search { float: right; margin-top: 40px; }
+#header .right { text-align: right; }
+
+fieldset { border-radius: 8px; padding: 10px; margin-top: 2em; }
+fieldset.word, fieldset.phrases, fieldset.only {
+	width: 32.5%;
+	float: right;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	height: 100px;
+	margin-bottom: 20px;
+	margin-top: 45px
+}
+fieldset.word { margin-top: 55px; height: 90px; }
+fieldset.word input { border-radius: 3px; padding: 5px 0px 5px 10px; }
+
+#limit { border-radius: 3px; color: #666; border: 1px solid #666; }
+#searchForm fieldset legend { color: #EE1B2E; font-size: 12pt; padding-left: 0.5em; padding-right: 0.5em; margin-left: 0.5em; }
+.searchintro { position: absolute; }
+.search-results, .form-limit, .result-title { clear: both; float: none; }
+.search-results { font-size: 120%; }
+
+.result-category { display: none; }
+.result-title { color: #EE1B2E; }
+.result-title a { color: #EE1B2E; }
+.result-text { margin-left: 0px; }
+.result-created { margin-left: 0px; margin-bottom: 20px; color: #333 !important; font-size: 90%; }
+
+.form-limit { margin-bottom: 20px; }
+/* SEARCH FUNCTION ITEMS AND RESULTS - END **************/
+
+
+
+
+/***************************************************************************/
+/*    MODULE - DOC MAN       */
+/***************************************************************************/
+/* Cat listing */
+.com_docman .categories .category { background: none; border: none; width: 40%; float: left; margin-right: 30px; }
+.category-inner .docman-title { font-size: 14px; }
+.category-inner .docman-title a { color: #666; font-weight: 700; }
+.category-inner .docman-document-thumbnail { height: 150px; }
+.category-inner .docman-document-thumbnail img { border: 1px solid #ccc; }
+/* Doc listing */
+.com_docman .docman-heading-wrap { margin-bottom: 40px; }
+.com_docman .docman-row { background: none; border: none; width: 40%; float: left; padding-top: 0px; margin-bottom: 10px; margin-top: 0px; border: none; margin-right: 65px; height: 115px; overflow: hidden; }
+.com_docman .docman-row .docman-document-description { width: 100%; }
+.com_docman .docman-row .docman-document-header { width: 69%; font-size: 13px; margin-top: 0px; margin-bottom: 0px; }
+.docman-row .docman-document-thumbnail { height: 115px; margin: 0px 10px 0px 0px; }
+.docman-row .docman-document-thumbnail img { border: 1px solid #ccc; max-width: 75px; }
+.docman-row p { font-size: 12px; }
+
+
+
+
+
+/***************************************************************************/
+/*    MODULE - JSN UNIFORM       */
+/***************************************************************************/
+
+.jsn-master .jsn-bootstrap .jsn-form-content .control-group .control-label
+{
+  font-weight: 300;
+  color: #999;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 13px;
+}
+.jsn-master .jsn-bootstrap .jsn-form-content .control-group .controls input, .jsn-master .jsn-bootstrap .jsn-form-content .control-group .controls select, .jsn-master .jsn-bootstrap .jsn-form-content .control-group .controls textarea
+{
+  color: #999;
+  padding: 5px 8px;
+  outline: none;
+  border: 1px solid #999;
+  
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.jsn-master .jsn-bootstrap .jsn-form-content .control-group.ui-state-highlight { background: none; border: none; }
+.jsn-master .jsn-bootstrap .jsn-form-content .control-group { padding: 4px; }
+.jsn-master { width: 40%; }
+.jsn-master .controls input, .jsn-master .controls .jsn-input-small-fluid, .jsn-master .controls .jsn-input-medium-fluid { width: 70% !important; }
+.jsn-master .controls textarea, .jsn-master .controls .jsn-input-xlarge-fluid { width: 76% !important; }
+.jsn-form-submit {
+  background-color: #258cad;
+  border: 1px solid #258cad;
+  padding: 5px 10px;
+  color: #fcfcfc;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.jsn-text-center { display: none; } /** Hide joomla Shine link at the bottom of joomla shine forms**/
+
+/* Success message */
+.jsn-master .jsn-bootstrap .alert {
+padding: 30px !important;
+border: 2px solid #06b8ba !important;
+padding: 10px;
+background-color: #dbfbfb;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+width: 100%;
+  color: #06b8ba !important;
+font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.success-uniform button.close {
+position: absolute;
+top: -20px;
+right: -10px;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+border: 2px solid #06b8ba;
+font-size: 290%;
+background-color: #06b8ba;
+padding: 0px;
+height: 40px;
+width: 40px;
+color: #fff;
+}
+
+
+
+
+
+
+
+/***************************************************************************/
+/*    MODULE - Pop Ups       */
+/***************************************************************************/
+
+#colorbox.popup-window { background-color: #fff; border: 4px solid #00a9cc; }
+
+.popup-window #cboxWrapper, #colorbox.popup-window, .popup-window #cboxLoadedContent, .popup-window #cboxContent { overflow: visible; } 
+
+/* Close button overrides */
+button#cboxClose { overflow: visible; }
+#cboxClose {
+background: none;
+width: 27px;
+height: 27px;
+top: -26px;
+right: -8px;
+
+-moz-opacity: 1;
+opacity: 1;
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);
+filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+filter:alpha(opacity=100);
+}
+
+#cboxClose:after {
+content: "\f057";
+font-family: FontAwesome;
+opacity: 1;
+font-size: 39px;
+color: #00a9cc;
+position: absolute;
+left: 0px;
+line-height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+
+#cboxClose:hover { 
+-moz-opacity: 1;
+opacity: 1;
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);
+filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+filter:alpha(opacity=100);
+}
+
+

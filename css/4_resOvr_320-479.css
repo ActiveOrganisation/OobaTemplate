@@ -1,0 +1,57 @@
+/********************************************************************************************************/
+/*    Note: Design for a width of 320px -> 479px                      */
+/********************************************************************************************************/
+
+
+
+@media only screen and (min-width: 120px) and (max-width: 479px) {
+
+
+/**** Some main styles ****/
+.mainPageWrapper{ width: 95%; }  
+
+h1 { font-size: 155%; }
+h2 { font-size: 120%; }
+h3 { font-size: 120%; }
+ 
+#header .moduleLeft, #header .moduleRight { clear: both; }   
+  
+  
+/****** Page Images Right / Left ********/
+.pageImageRight, .pageImageLeft { width: 175px; }
+.imageCaption { width: 175px; font-size: 75%; margin-top: -10px; }
+
+  
+ 
+
+/********************************************************************************************************/
+/*    Main Navigation / Off Canvas Navigation                      */
+/********************************************************************************************************/
+
+#navigation {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    
+-webkit-transition: opacity 1s linear 0.2s;
+-moz-transition: opacity 1s linear 0.2s;
+transition: opacity 1s linear 0.2s; 
+  }
+#offCanvasNavButtonWrapper { display:block !important; }
+
+
+
+
+
+/********************************************************************************************************/
+/*    Footer / Footer Nav                      */
+/********************************************************************************************************/
+
+
+/********************************************************************************************************/
+/*    Module Overrides                     */
+/********************************************************************************************************/
+
+
+} /*** END of width of 320px -> 479px ***/
+

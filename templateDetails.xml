@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.0" type="template" client="site">
+	<name>ooba:template</name><!-- name the template -->
+	<creationDate>2013-11-11</creationDate><!-- the date your are beginning to code -->
+	<author>ooba:creative</author><!-- your name (oops, I repeat myself) -->
+	<copyright>Copyright © 2013</copyright><!-- for who you are coding -->
+	<authorEmail>studio@oobacreative.co.uk</authorEmail><!-- your email address -->
+	<authorUrl>http://www.oobacreative.co.uk</authorUrl><!-- your url -->
+	<version>1.0.0</version><!-- give your template a number -->
+	<description></description><!-- change the description as you like -->
+<files><!-- no need to change -->
+	<folder>css</folder>
+	<folder>html</folder>
+	<folder>images</folder>
+	<folder>js</folder>
+	<filename>index.php</filename>
+	<filename>template_preview.png</filename>
+	<filename>template_thumbnail.png</filename>
+	<filename>favicon.ico</filename>
+	<filename>templateDetails.xml</filename>
+	<filename>component.php</filename>
+	<filename>error.php</filename>
+</files>
+<positions><!-- define the positions for modules here -->
+	<position>slidein-left</position>
+	<position>slidein-right</position>
+	<position>slidein-bottom</position>   
+	<position>header-left</position>
+	<position>header-right</position>
+	<position>mainNavigation</position>
+	<position>breadcrumbs</position>
+	<position>sidebarLeft</position>
+    <position>moduleBeforeContent</position>
+	<position>moduleInContent</position>
+	<position>sidebarRight</position>
+	<position>footer</position>
+	<position>extraFooterInfo-left</position>
+	<position>extraFooterInfo-right</position>
+</positions>
+<config></config>	
+</extension>

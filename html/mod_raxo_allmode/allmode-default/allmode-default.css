@@ -1,0 +1,273 @@
+/**
+ * =============================================================
+ * RAXO All-mode PRO J3.x - Template CSS
+ * -------------------------------------------------------------
+ * @package		RAXO All-mode PRO
+ * @subpackage	All-mode Default Template
+ * @copyright	Copyright (C) 2009-2014 RAXO Group
+ * @license		RAXO Commercial License
+ * 				This file is forbidden for redistribution
+ * @link		http://www.raxo.org
+ * =============================================================
+ */
+
+
+/* ----- RESET Styles ----- */
+.allmode-default .allmode-name, .allmode-default .allmode-showall,
+.allmode-default .allmode-topitem, .allmode-default .allmode-item,
+.allmode-default .allmode-title, .allmode-default img, .allmode-default a {
+	margin: 0; padding: 0;
+	background: transparent none;
+	border: 0 none;
+}
+
+
+/* ----- MODULE BOX Styles ----- */
+.allmode-default {																/* Module BLOCK */
+	margin: 16px 0;
+}
+.allmode-default .allmode-name {												/* BLOCK NAME Text */
+	margin: 0 8px; padding: 5px 4px;
+	font-size: 16px; font-weight: normal !important;
+	color: #373737;
+	border-top: 2px solid #dddddd;
+}
+.allmode-default .allmode-showall {												/* SHOW ALL Text */
+	margin: 0 8px; padding: 3px 4px 0;
+	text-align: right !important;
+	border-top: 1px solid #dddddd;
+}
+
+
+/* ----- COMMON Fields Styles ----- */
+.allmode-default a {															/* LINKS */
+	text-decoration: none;
+}
+.allmode-default a:hover {														/* LINKS Hover */
+	color: #333333 !important;
+	background: transparent none;
+	border-bottom: 1px solid #333333;
+}
+.allmode-default .allmode-date,
+.allmode-default .allmode-hits,
+.allmode-default .allmode-comments {
+	padding: 0 10px 0 15px;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAPACAYAAAAMqejyAAAEaklEQVR4Xu2YQYscVRSFax2BApEAI3aNg5mNYTSgMLRj2sHCiFBYkQTanSKQYAK2KqhId4MbBVEhKFAC2ooGNxGCjaAtTEMa3LgTK7oXBf0FUzhcz4X76KrhzaMQlUbOBx91H+9Vz6xOPU70z/N9klRQ4AIOoZgjOLe5ip7b3ZUPTp0aYFHYS6lq80T39EyUZZnAnegIdA82D2Iu3FMNHzRaHXRP38Fe4H/suYO/ws9h6tP2ftODj+kA5Qh/0TPRfwghBAEQwx+hwAP4WTCY4Bn4EjwIHjwcKVft58X+XHzUwQP7+TMusEwJpZnU/Vv5WM/wdLizM9VnfXYZvvwqhK2ifw9CmFwd+A3ch3LIfdvr6MEZvAnPem4oZ21vL7K3skBWKn8ejpS3bd/mRvaEf/HbEyf6SIoD9z+WMP96czO37HHquoR7erBjh/d9mQNnMPFdZWM4htL27vtV1BJCCCGEkJ+z4xUUuIBDKOYIzm2uohey0/JJdnKARWEvparNE93DmdXrzdibEcLejL1ZPcPT17PtqT7rs8vw5VchbKA3I4SwN/suu6P/U3a82Zstsk5u2ePUdQmbvZkvc+AMJr6rbAzHUNrefVv3ZoQQQgghf9yIKihwAYdQzBGc21xFL1/elmvvdwZYFPZSqto80T2cWb3ejL0ZIezN2JvVMzx989V7p/qszy7Dl1+FsIHejBDC3uzm9Fj/9xtRszf74fotuWWPU9clbPZmvsyBM5j4rrIxHENpe/dt3ZsRQgghhGTFZgUFLuAQijmCc5urKHv6Ycleu3+ARWEvparNE93DmdXrzdibEcLejL1ZPcPT7NnTU302Zsvw5VchbKA3I4SwN8vevbuPpGj2Ztk7J3PLHqeuS9jszXyZA2cw8V1lYziG0vbu27o3I4QQQgi5/csPKyhwAYdQzBGc21xFD118Ru55azTAorCXUtXmie7hzOr1ZuzNCGFvxt6snuFp98VLU33WZ5fhy69C2EBvRghhb3bn1ff6SIpmb7bx6ZXcssep6xI2ezNf5sAZTHxX2RiOobS9+7buzQghhBBCjp3fq6DABRxCMUdwbnMVPfD4JbnriSsDLAp7KVVtnugezqxeb8bejBD2ZuzN6hme3pe/MtVnfXYZvvwqhA30ZoQQ9ma3nrveR1I0e7Pbzn2RW/Y4dV3CZm/myxw4g4nvKhvDMZS2d9/WvRkhhBBCyOXutQoKXMAhFHME5zZX0flHL8hTu28MsCjspVS1eaJ7OLN6vRl7M0LYm7E3q2d4+uQjz0/1WZ9dhi+/CmEDvRkhhL3ZxZ2P+0iKZm924cGPcssep65L2OzNfJkDZzDxXWVjOIbS9u7bujcjhBBCCFlbW6ugwAUcQjFHcG5zFfV6Pdna2hpgUdhLqWrzRPdwZvV6M/ZmhLA3Y29Wz/C02+1O9VmfXYYvvwphA70ZIYS92fr6eh9J0ezNNjY2cssep65L2OzNfJkDZzDxXWVjOIbS9u77f+3NCCGEEPIXFU2+TUW8xQsAAAAASUVORK5CYII=");
+	/*background-image: url("icons.png");*/
+	background-repeat: no-repeat;
+}
+.allmode-default span.allmode-rating {											/* Item RATING */
+	padding: 0;
+	background-image: none;
+	white-space: nowrap;
+}
+	.allmode-default .allmode-rating span {
+		display: inline-block;
+		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAGACAYAAACUbvO3AAABVUlEQVR4Xu2VoUoEURSG75ldDAaTGMawSYPNqk+wYeKGBZ9g0W5cn0DQIBarSRg0GA1WMVmsazAY9hHGIxxxGBxOWE65fD/8cOF8TJg/fFLXdepkph1oL9uHogPtaC+05/b+AzvvM/vawN5FG5xrX7VL7TRZ7L2023yowES7l/7PhnZfu1YoMNa+pZ7YbfwDLrRVH2W3j8KAw17Mbr/gUQv4tKb2bWjAvXZTe6u90jb246d2S7aMH1vGjzRNs9oX8wcBAQHl9HERv8xMe+KAkZ7BMzFb4xlAQEA/8jIa5e8ZPBOzNZ4BBAT0I+/VVv6ewTMxW+MZQEBAP/L1nPL3DJ6J2RrPAAIC+pHqejd/z+CZmK3xDCAgoB/ZfrjJ3zN4JmZrPAMICOhH1idP+XsGz8RsjWcAAQH9yPHBXf6ewTMxW+MZQEBAP1KWZf6ewTOrbY1nAL8Bt9oQqywIW7QAAAAASUVORK5CYII=") no-repeat 0 0;
+		/*background: url("rating.png") no-repeat 0 0;*/
+	}
+	.allmode-default .allmode-star {											/* Inactive STAR */
+		margin: 0 1px;
+		width: 10px; height: 10px;
+	}
+	.allmode-default .allmode-star span {										/* Active STAR */
+		width: 100%; height: 100%;
+	}
+
+
+/* ----- TOP ITEMS Styles ----- */
+.allmode-default .allmode-topbox {												/* TOP Items DIV */
+	margin: 0 8px;
+}
+.allmode-default .allmode-topitem {												/* TOP Item DIV */
+	padding: 14px 0 10px;
+	overflow: hidden; clear: left;
+	border-top: 1px dashed #dddddd;
+}
+.allmode-default .allmode-topitem .allmode-title {								/* TOP Item TITLE */
+	margin: 0 0 3px 0 !important;
+	font: bold 15px/21px Tahoma,Verdana,Arial,Helvetica,sans-serif;
+}
+.allmode-default .allmode-topitem .allmode-title a {
+	font-weight: bold;
+}
+.allmode-default .allmode-topitem .allmode-text {								/* TOP Item TEXT */
+	font: normal 13px/20px "Trebuchet MS",Arial,sans-serif;
+	color: #373737;
+}
+.allmode-default .allmode-topitem .allmode-readmore {							/* TOP Item READ MORE */
+	float: right;
+	margin-right: 4px;
+	font: normal 11px/21px Helvetica,Arial,sans-serif;
+	text-align: right;
+}
+
+
+/* ----- TOP FIELDS Styles ----- */
+.allmode-default .allmode-topitem .allmode-details {							/* TOP Item Details DIV */
+	margin-bottom: 3px;
+	font-size: 12px; line-height: 14px;
+	color: #525252;
+}
+.allmode-default .allmode-topitem .allmode-info {								/* TOP Item Info DIV */
+	margin-top: -4px; padding-bottom: 2px;
+	font-size: 11px; line-height: 17px;
+	font-style: italic;
+	color: #b4b4b4;
+}
+.allmode-default .allmode-topitem .allmode-category,
+.allmode-default .allmode-topitem .allmode-author {								/* TOP Item CATEGORY, AUTHOR */
+	padding-right: 5px;
+	font-style: normal;
+	color: #808080;
+}
+
+
+/* ----- ITEMS Styles ----- */
+.allmode-default .allmode-itemsbox {											/* Items DIV */
+	margin: 0 8px;
+}
+.allmode-default .allmode-item {												/* Item DIV */
+	padding: 12px 0 6px;
+	overflow: hidden; clear: left;
+	border-top: 1px dashed #dddddd;
+}
+.allmode-default .allmode-item .allmode-title {									/* Item TITLE */
+	margin: 0 0 3px 0 !important;
+	font: bold 13px/17px Tahoma,Verdana,Arial,Helvetica,sans-serif;
+}
+.allmode-default .allmode-item .allmode-title a {
+	font-weight: bold;
+}
+.allmode-default .allmode-item .allmode-text {									/* Item TEXT */
+	font: normal 12px/17px Helvetica,Arial,sans-serif;
+	color: #373737;
+}
+.allmode-default .allmode-item .allmode-readmore {								/* Item READ MORE */
+	float: right;
+	margin-right: 4px;
+	font-size: 11px;
+	text-align: right;
+}
+
+
+/* ----- FIELDS Styles ----- */
+.allmode-default .allmode-item .allmode-details {								/* Item Details DIV */
+	margin-bottom: 2px;
+	font-size: 11px; line-height: 13px;
+	color: #525252;
+}
+.allmode-default .allmode-item .allmode-details > span {
+	padding-top: 1px;
+}
+.allmode-default .allmode-item .allmode-info {									/* Item Info DIV */
+	margin-top: -4px; padding-bottom: 2px;
+	font-size: 10px; line-height: 16px;
+	font-style: italic;
+	color: #b4b4b4;
+}
+.allmode-default .allmode-item .allmode-category,
+.allmode-default .allmode-item .allmode-author {								/* Item CATEGORY, AUTHOR */
+	padding-right: 5px;
+	font-style: normal;
+	color: #808080;
+}
+
+
+/* ----- RESPONSIVE Images ----- */
+.allmode-default .allmode-img {													/* Item IMAGE */
+	margin: 0 4px;
+}
+.allmode-default .allmode-img img {												/* IMAGE Style */
+	float: left;
+	display: block;
+	margin: 0 16px 8px -4px; padding: 3px;
+	max-width: 100%; height: auto;
+	background-color: #f6f5f5;
+	border: 1px solid #8e8c8c; border-radius: 2px;
+	transition: border 0.4s ease;
+}
+
+
+
+/* ----- COLOR Schemes ----- */
+
+/* --- Red Color (default) --- */
+.allmode-default a {color: #cc1f1f !important;}
+.allmode-default .allmode-name,
+.allmode-default .allmode-showall,
+.allmode-default a:hover img {border-color: #cc1f1f;}
+.allmode-default .allmode-date {background-position: 0 0;}
+.allmode-default .allmode-hits {background-position: 0 -30px;}
+.allmode-default .allmode-comments {background-position: 0 -60px;}
+.allmode-default .allmode-star span {background-position: 0 -80px;}
+
+/* --- Orange Color --- */
+.default-orange a {color: #d94d16 !important;}
+.default-orange .allmode-name,
+.default-orange .allmode-showall,
+.default-orange a:hover img {border-color: #d94d16;}
+.default-orange .allmode-date {background-position: 0 -120px;}
+.default-orange .allmode-hits {background-position: 0 -150px;}
+.default-orange .allmode-comments {background-position: 0 -180px;}
+.default-orange .allmode-star span {background-position: 0 -120px;}
+
+/* --- Yellow Color --- */
+.default-yellow a {color: #ebc300 !important;}
+.default-yellow .allmode-name,
+.default-yellow .allmode-showall,
+.default-yellow a:hover img {border-color: #ebc300;}
+.default-yellow .allmode-date {background-position: 0 -240px;}
+.default-yellow .allmode-hits {background-position: 0 -270px;}
+.default-yellow .allmode-comments {background-position: 0 -300px;}
+.default-yellow .allmode-star span {background-position: 0 -160px;}
+
+/* --- Green Color --- */
+.default-green a {color: #4d9926 !important;}
+.default-green .allmode-name,
+.default-green .allmode-showall,
+.default-green a:hover img {border-color: #4d9926;}
+.default-green .allmode-date {background-position: 0 -360px;}
+.default-green .allmode-hits {background-position: 0 -390px;}
+.default-green .allmode-comments {background-position: 0 -420px;}
+.default-green .allmode-star span {background-position: 0 -200px;}
+
+/* --- Turquoise Color --- */
+.default-turquoise a {color: #1bb39e !important;}
+.default-turquoise .allmode-name,
+.default-turquoise .allmode-showall,
+.default-turquoise a:hover img {border-color: #1bb39e;}
+.default-turquoise .allmode-date {background-position: 0 -480px;}
+.default-turquoise .allmode-hits {background-position: 0 -510px;}
+.default-turquoise .allmode-comments {background-position: 0 -540px;}
+.default-turquoise .allmode-star span {background-position: 0 -240px;}
+
+/* --- Blue Color --- */
+.default-blue a {color: #0a55bf !important;}
+.default-blue .allmode-name,
+.default-blue .allmode-showall,
+.default-blue a:hover img {border-color: #0a55bf;}
+.default-blue .allmode-date {background-position: 0 -600px;}
+.default-blue .allmode-hits {background-position: 0 -630px;}
+.default-blue .allmode-comments {background-position: 0 -660px;}
+.default-blue .allmode-star span {background-position: 0 -280px;}
+
+/* --- Violet Color --- */
+.default-violet a {color: #6c3aad !important;}
+.default-violet .allmode-name,
+.default-violet .allmode-showall,
+.default-violet a:hover img {border-color: #6c3aad;}
+.default-violet .allmode-date {background-position: 0 -720px;}
+.default-violet .allmode-hits {background-position: 0 -750px;}
+.default-violet .allmode-comments {background-position: 0 -780px;}
+.default-violet .allmode-star span {background-position: 0 -320px;}
+
+/* --- Black Color --- */
+.default-black a {color: #1a1a1a !important;}
+.default-black .allmode-name,
+.default-black .allmode-showall,
+.default-black a:hover img {border-color: #1a1a1a;}
+.default-black .allmode-date {background-position: 0 -840px;}
+.default-black .allmode-hits {background-position: 0 -870px;}
+.default-black .allmode-comments {background-position: 0 -900px;}
+.default-black .allmode-star span {background-position: 0 -360px;}
