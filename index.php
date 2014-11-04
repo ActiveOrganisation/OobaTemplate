@@ -64,6 +64,24 @@ $pageclass = 'pageOverride-' . $itemid;
 
 <body id="<?php echo $pageclass ? htmlspecialchars($pageclass) : 'default'; ?>">
 
+<?php if($this->countModules('skyBanner')) : ?>
+<div class="skyBanner">
+<jdoc:include type="modules" name="skyBanner" style="xhtml" />
+<div class="clear"></div>
+</div>
+<?php endif; ?>
+
+<?php if($this->countModules('topBanner')) : ?>
+<div class="topBanner">
+<jdoc:include type="modules" name="topBanner" style="xhtml" />
+<div class="clear"></div>
+</div>
+<?php endif; ?>
+  
+  
+  
+  
+
 <?php if($this->countModules('slidein-left')) : ?>
     <div class="slidein left">
 		<jdoc:include type="modules" name="slidein-left" style="xhtml" />
@@ -99,18 +117,13 @@ $pageclass = 'pageOverride-' . $itemid;
 <div id="header" class="clearfix">
 <div id="offCanvasNavButtonWrapper"><div id="offCanvasNavButton"><i class="fa fa-list-ul"></i> Navigation</div></div>
   
-  <?php if($this->countModules('header-left')) : ?>
-    <div class="moduleLeft">
-		<jdoc:include type="modules" name="header-left" style="xhtml" />
-        <div class="clear"></div>
-    </div>
+
+<?php if($this->countModules('header-left')) : ?>
+<jdoc:include type="modules" name="header-left" style="xhtml" />
 <?php endif; ?>
 	
 <?php if($this->countModules('header-right')) : ?>
-    <div class="moduleRight">
-		<jdoc:include type="modules" name="header-right" style="xhtml" />
-        <div class="clear"></div>
-    </div>
+<jdoc:include type="modules" name="header-right" style="xhtml" />
 <?php endif; ?>
 	
 
@@ -142,17 +155,27 @@ $pageclass = 'pageOverride-' . $itemid;
 <!-- Main Content area -->
 <div class="mainContentWrapper <?php echo $contentwidth ?>">
 	<jdoc:include type="message" />
-	<jdoc:include type="modules" name="moduleBeforeContent" style="xhtml" />
+	<jdoc:include type="modules" name="moduleBeforeComponent" style="xhtml" />
     <jdoc:include type="component" />
 
-    <jdoc:include type="modules" name="moduleInContent" style="xhtml" />
+    <jdoc:include type="modules" name="moduleAfterComponent" style="xhtml" />
 </div> <!-- End of Component -->
+
+
+
 
 <!-- Right Sidebar Content area -->
 <?php if($this->countModules('sidebarRight')) : ?>
-	<div class="moduleRight sidebar"><jdoc:include type="modules" name="sidebarRight" style="xhtml" /></div>
+<div class="moduleRight sidebar">
+<jdoc:include type="modules" name="sidebarRight" style="xhtml" />
+</div>
 <?php endif; ?>
 
+  
+  
+  
+  
+  
 <?php if($this->countModules('footer')) : ?>
 <div id="footer">
     <jdoc:include type="modules" name="footer" style="xhtml" />
@@ -164,24 +187,21 @@ $pageclass = 'pageOverride-' . $itemid;
 </div><!-- End of mainWrapper -->
  
 
+
+<?php if($this->countModules('extraFooterInfo-left') || $this->countModules('extraFooterInfo-right')) : ?>
+  
 <div id="extraFooterInfo">
 <?php if($this->countModules('extraFooterInfo-left')) : ?>
-	<div class="moduleLeft">
-		<jdoc:include type="modules" name="extraFooterInfo-left" style="xhtml" />
-        <div class="clear"></div>
-	</div>
+<jdoc:include type="modules" name="extraFooterInfo-left" style="xhtml" />
 <?php endif; ?>
 
 
 <?php if($this->countModules('extraFooterInfo-right')) : ?>
-    <div class="moduleRight">
-        <jdoc:include type="modules" name="extraFooterInfo-right" style="xhtml" />
-        <div class="clear"></div>  
-    </div>
+<jdoc:include type="modules" name="extraFooterInfo-right" style="xhtml" />
 <?php endif; ?>
 <div class="clear"></div>
 </div><!-- End of extraFooterInfo --> 
- 
+ <?php endif; ?>
  
 
 
